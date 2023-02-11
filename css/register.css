@@ -1,0 +1,156 @@
+/* 由于版心写在通用css里，注册页没加，所以这里要写一个w */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* 这个是注册新用户，灰色那一行 */
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: #c81523;
+}
+
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    /* 转为行内块元素设置长宽 */
+    display: inline-block;
+    width: 88px;
+    /* 靠右对齐 */
+    text-align: right;
+}
+
+/* 文本框 */
+/* 这里如果不写inp下面的复选框也会变  */
+.reg_form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+/* 错误信息设置 */
+.error {
+    color: #c81523;
+}
+
+.error_icon,
+.success_icon {
+    /* 转换为行内块以设置长宽 */
+    display: inline-block;
+    /* 默认基线对齐会让图标和文字对不齐，所以改成中线对齐 */
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    margin-top: -2px;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+/* 安全程度模块 */
+.safe {
+    padding-left: 170px;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+/* 弱 */
+.ruo {
+    background-color: #de1111;
+}
+
+/* 中 */
+.zhong {
+    background-color: #40b83f;
+}
+
+/* 强 */
+.qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 95px;
+}
+
+.agree input {
+    /* 同上，中线对齐 */
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+/* 按钮 */
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    margin: 30px 0 0 70px;
+}
+
+/* 尾部 */
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}

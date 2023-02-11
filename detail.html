@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>手机详情页！</title>
+    <meta name="description"
+        content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购" />
+    <!-- 引入facicon.ico网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 引入css 初始化的css 文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式的css 文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入详情页面的css文件 -->
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+    <!-- shortcut快捷导航模块 开始 -->
+    <section class="shortcut">
+        <div class="w">
+            <!-- 快捷导航左边的盒子 -->
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您！&nbsp;</li>
+                    <li>
+                        <a href="#">请登录</a> &nbsp; <a href="register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 快捷导航右边的盒子 -->
+            <div class="fr">
+                <ul>
+                    <!-- 这里把文字和小竖线都当成一个li，然后用偶数筛选给小竖线加padding值撑开 -->
+                    <li>我的订单</li>
+                    <li></li>
+                    <!-- 给这个li添加一个下箭头图标，下方同理 -->
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷导航模块 结束 -->
+
+    <!-- header头部模块制作 开始 -->
+    <header class="header w">
+        <!-- logo模块 -->
+        <!-- 还是SEO优化问题，logo用h1包括表示强调这里，a标签做一个点击跳转到首页的功能，title提示词同样表强调，然后隐藏这个文字 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="品优购商城">品优购商城</a>
+            </h1>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="请输入内容...">
+            <button>搜索</button>
+        </div>
+        <!-- hotwords模块制作 -->
+        <div class="hotwords">
+            <!-- 这一个a要变红 -->
+            <a href="#" class="style_red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <!-- 购物车模块 -->
+        <div class="shopcar">
+            我的购物车
+            <!-- count表示右上角那个数字 -->
+            <i class="count">10</i>
+        </div>
+    </header>
+    <!-- header头部模块制作 结束 -->
+
+    <!-- 详情页内容部分	 -->
+    <div class="de_container w">
+        <!-- 面包屑导航 -->
+        <div class="crumb_wrap">
+            <a href="#">手机、数码、通讯</a> 〉 <a href="#">手机 </a> 〉 <a href="#">Apple苹果 </a> 〉 <a href="#">iphone 6S Plus系类</a>
+        </div>
+        <!-- 产品介绍模块 -->
+        <div class="product_intro clearfix">
+            <!-- 预览区域 -->
+            <div class="preview_wrap fl">
+                <div class="preview_img">
+                    <img src="upload/s3.png" alt="">
+                </div>
+
+                <div class="preview_list">
+                    <a href="#" class="arrow_prev"></a>
+                    <a href="#" class="arrow_next"></a>
+                    <ul class="list_item">
+                        <li>
+                            <img src="upload/pre.jpg" alt="">
+                        </li>
+                        <li class="current">
+                            <img src="upload/pre.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/pre.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/pre.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/pre.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 产品详细信息 -->
+            <div class="itemInfo_wrap fr">
+                <div class="sku_name">
+                    Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机
+                </div>
+                <div class="news">
+                    推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返
+                </div>
+                <div class="summary">
+                    <dl class="summary_price">
+                        <dt>价格</dt>
+                        <dd>
+                            <i class="price">￥5299.00 </i>
+
+                            <a href="#">降价通知</a>
+
+                            <div class="remark">累计评价612188</div>
+
+                        </dd>
+                    </dl>
+                    <dl class="summary_promotion">
+                        <dt>促销</dt>
+                        <dd>
+                            <em>加购价</em> 满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换 购热销商品 详情 》
+
+                        </dd>
+                    </dl>
+                    <dl class="summary_support">
+                        <dt>支持</dt>
+                        <dd>以旧换新，闲置手机回收 4G套餐超值抢 礼品购</dd>
+                    </dl>
+                    <dl class="choose_color">
+                        <dt>选择颜色</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">玫瑰金</a>
+                            <a href="javascript:;">金色</a>
+                            <a href="javascript:;">白色</a>
+                            <a href="javascript:;">土豪色</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose_version">
+                        <dt>选择版本</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">公开版</a>
+                            <a href="javascript:;">移动4G</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose_type">
+                        <dt>购买方式</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">官方标配</a>
+                            <a href="javascript:;">移动优惠购</a>
+                            <a href="javascript:;">电信优惠购</a>
+                        </dd>
+                    </dl>
+                    <div class="choose_btns">
+                        <div class="choose_amount">
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                            <a href="javascript:;" class="reduce">-</a>
+                        </div>
+                        <a href="#" class="addcar">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 产品细节模块 product_detail	 -->
+        <div class="product_detail clearfix">
+            <!-- aside -->
+            <div class="aside fl">
+                <div class="tab_list">
+                    <ul>
+                        <li class="first_tab ">相关分类</li>
+                        <li class="second_tab current">推荐品牌</li>
+                    </ul>
+                </div>
+                <div class="tab_con">
+
+                    <ul>
+                        <li>
+                            <img src="upload/aside_img.jpg" alt="">
+                            <h5>华为 HUAWEI P20 Pro 全面屏徕卡</h5>
+                            <div class="aside_price">¥19</div>
+                            <a href="#" class="as_addcar">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/aside_img.jpg" alt="">
+                            <h5>华为 HUAWEI P20 Pro 全面屏徕卡</h5>
+                            <div class="aside_price">¥19</div>
+                            <a href="#" class="as_addcar">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/aside_img.jpg" alt="">
+                            <h5>华为 HUAWEI P20 Pro 全面屏徕卡</h5>
+                            <div class="aside_price">¥19</div>
+                            <a href="#" class="as_addcar">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/aside_img.jpg" alt="">
+                            <h5>华为 HUAWEI P20 Pro 全面屏徕卡</h5>
+                            <div class="aside_price">¥19</div>
+                            <a href="#" class="as_addcar">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/aside_img.jpg" alt="">
+                            <h5>华为 HUAWEI P20 Pro 全面屏徕卡</h5>
+                            <div class="aside_price">¥19</div>
+                            <a href="#" class="as_addcar">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/aside_img.jpg" alt="">
+                            <h5>华为 HUAWEI P20 Pro 全面屏徕卡</h5>
+                            <div class="aside_price">¥19</div>
+                            <a href="#" class="as_addcar">加入购物车</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!-- detail -->
+            <div class="detail fr">
+                <div class="detail_tab_list">
+                    <ul>
+                        <li class="current">商品介绍</li>
+                        <li>规格与包装</li>
+                        <li>售后保障</li>
+                        <li>商品评价（50000）</li>
+                        <li>手机社区</li>
+                    </ul>
+                </div>
+                <div class="detail_tab_con">
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>分辨率：1920*1080(FHD)</li>
+                            <li>后置摄像头：1200万像素</li>
+                            <li>前置摄像头：500万像素</li>
+                            <li>核 数：其他</li>
+                            <li>频 率：以官网信息为准</li>
+                            <li>品牌： Apple ♥关注</li>
+                            <li>商品名称：APPLEiPhone 6s Plus</li>
+                            <li>商品编号：1861098</li>
+                            <li>商品毛重：0.51kg</li>
+                            <li>商品产地：中国大陆</li>
+                            <li>热点：指纹识别，Apple Pay，金属机身，拍照神器</li>
+                            <li>系统：苹果（IOS）</li>
+                            <li>像素：1000-1600万</li>
+                            <li>机身内存：64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="more">查看更多参数</a>
+                        </p>
+                        <img src="upload/detail_img1.jpg" alt="">
+                        <img src="upload/detail_img2.jpg" alt="">
+                        <img src="upload/detail_img3.jpg" alt="">
+                    </div>
+                    <!-- 
+					<div class="item">规格与包装</div>
+					<div class="item">售后保障</div> 
+					-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 详情页内容部分	 -->
+
+    <!-- 底部模块 开始 -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 服务模块 -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <!-- h5里放图标 -->
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障,提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障,提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障,提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障,提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障,提供发票</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 帮助模块 -->
+            <div class="mod_help">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <img src="images/wx_cz.jpg" alt="">
+                        品优购客户端
+                    </dd>
+                </dl>
+            </div>
+            <!-- 版权信息模块 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a> | <a
+                        href="#">营销中心</a> | <a href="#">手机品优购</a> | <a href="#">友情链接</a> | <a href="#">销售联盟</a> | <a
+                        href="#">品优购社区</a> |
+                    <a href="#">品优购公益</a> | <a href="#">English Site</a> | <a href="#">Contact U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块 结束 -->
+    <!-- 这是返回顶部的固定按钮 -->
+    <div class="to_top">
+        <a href="#top">返回顶部</a>
+    </div>
+</body>
+
+</html>

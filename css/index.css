@@ -1,0 +1,243 @@
+.main {
+    width: 980px;
+    height: 455px;
+    /* 往左移220px，不要被那个下拉菜单压住了 */
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+/* 焦点图 */
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+
+/* 快报 */
+.newsflash {
+    /* 一浮全浮 */
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+/* 快报里的新闻模块 */
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+/* 新闻标题 */
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    /* 新闻标题有个下划线 */
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+/* 在“更多”的后面加右箭头 */
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    /* 每一行字的高度 */
+    height: 24px;
+    /* 垂直居中 */
+    line-height: 24px;
+    /* 这里设置的是溢出文字用省略号表示， */
+    /* 先溢出部分隐藏 */
+    overflow: hidden;
+    /* 强制让文字一行显示 */
+    white-space: nowrap;
+    /* 多余部分变成省略号 */
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    height: 209px;
+    border-left: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+/* 快报里的生活服务模块 */
+.lifeservice ul {
+    /* 其实为了防止第四个li掉下来，可以把这个父元素的宽设置的多一点 */
+    width: 250px;
+}
+
+.lifeservice ul li {
+    float: left;
+    /* 一行四个li，一个li宽度25% */
+    width: 25%;
+    height: 71px;
+    /* 这里只设置右边框和下边框，如果设置全边框会有边框重合的问题 */
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    /* 这里设置居中，下面的i元素就会居中 */
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+/* 快报里的特价商品模块 */
+.bargain {
+    margin-top: 5px;
+}
+
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+/* 推荐模块左部分 */
+.recom_hd {
+    /* 一浮全浮 */
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* 推荐模块右部分 */
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    /* 浮动让四个li一行显示 */
+    float: left;
+    /* 这里是做中间的竖线，由于竖线不是紧挨着大盒子的，所以我们先变成圆角然后再加右边框 */
+    border-radius: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+/* 家用电梯模块 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+/* 一楼家用电器 */
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+/* 一楼家用电器的右边文字部分 */
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+/* 这个是floor，一时间和footer搞混了，乐 */
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+
+}
+
+.tab_list_item div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    /* 给每个li一个右外边距 */
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    /* 然后再给父元素ul一个内左边距，这样就撑开的比较均匀 */
+    padding-left: 12px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+/* 给第三，第五个li的上面的图片加一个下边框 */
+.under-bottom {
+    /* a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 返回顶部 */
+.to_top {
+    /* 用固定定位 */
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    height: 80px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: white;
+    border: 1px solid black;
+}

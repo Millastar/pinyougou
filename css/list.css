@@ -1,0 +1,74 @@
+/* 这个是因为nav的子盒子比父盒子高了2px，而且是浮动的所以如果不加这个隐藏，在下面继续放盒子的话，文字会环绕浮动显示，也就是在右边 */
+.nav {
+    overflow: hidden;
+}
+
+/* 秒杀的那个图 */
+.sk {
+    /* 这一行的盒子都是用定位做的，父元素已经加了相对定位，符合子绝父相 */
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+/* 这个是秒杀图下面的秒杀列表 */
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    /* 按理说这里设置成47才是垂直居中，但因为前面那个秒杀文字加粗了所以看起来在女装的下面一点，所以稍微大一点让文字掉下来，太细了 */
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+
+}
+
+/* 给更多分类（最后一个li）后面加一个下箭头 */
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    /* 这里为什么要加1px的透明边框，是因为本来是没有边框的，鼠标移上来会显示红色边框，相当于多加了一个红色边框，盒子大小变了，所以这里也加上1px边框 */
+    border: 1px solid transparent;
+}
+
+/* 因为一排四个，所以选出每行最后一个，不加右边距，不然会掉下来 */
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}

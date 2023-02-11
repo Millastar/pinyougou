@@ -1,0 +1,364 @@
+/* 声明字体图标 这里一定要注意路径的变化，要先..跳到上一级保持和fonts文件夹同级 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心，可直接调用该类名实现版心宽度和居中对齐 */
+.w {
+    width: 1200px;
+    /* 左右居中对齐 */
+    margin: 0 auto;
+}
+
+/* 左浮，广义表示某个版心盒子中的左盒子 */
+.fl {
+    float: left;
+}
+
+/* 右浮，广义表示某个版心盒子中的右盒子 */
+.fr {
+    float: right;
+}
+
+/* 文字设置为红色，全站有需要可直接调用style_red类 */
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航模块 */
+.shortcut {
+    /* 这个行高会继承给两个子盒子 */
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+/* 这里把左右两个盒子中ul的li都左浮了 */
+.shortcut ul li {
+    float: left;
+}
+
+/* 选出右盒子里的偶数li，这里用了伪元素选择器 */
+.shortcut .fr ul li:nth-child(even) {
+    /* 宽度设置成1，做成小竖线的样子 */
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    /* 外边距，上，左右，下 */
+    margin: 9px 15px 0;
+}
+
+下箭头图标，用了伪类选择器 .arrow-icon::after {
+    /* 下箭头编号 */
+    content: '\e91e';
+    /* 声明字体图标 */
+    font-family: 'icomoon';
+    /* 图标离左边有6px */
+    margin-left: 6px;
+}
+
+/* 快捷导航部分 结束 */
+
+/* header 头部制作 */
+.header {
+    /* 子绝父相 */
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    /* 转换为块元素以设置长宽 */
+    display: block;
+    width: 171px;
+    height: 61px;
+    /* logo在这里当背景图片 */
+    background: url(../images/logo.png) no-repeat;
+    /* font-size: 0;京东的做法*/
+    /* 淘宝的做法，文本往左缩进，然后隐藏超出盒子的部分 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* 搜索栏 */
+.search {
+    /* 用绝对定位定在中间 */
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    /* 一浮全浮，如果都不浮中间会有个默认的小缝隙 */
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 热点词 */
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    /* 每个热点词有个左右间距 */
+    margin: 0 10px;
+}
+
+/* 购物车 */
+.shopcar {
+    /* 用绝对定位定在右边 */
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    /* 垂直居中 */
+    line-height: 35px;
+    /* 水平居中 */
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar::before {
+    /* 购物车图标编号 */
+    content: '\e93a';
+    font-family: 'icomoon';
+    /* 图标距离右边5px */
+    margin-right: 5px;
+    /* 把图标变成红色，因为字体图标本质还是字体所以可以用修改文字颜色的方式修改 */
+    color: #b1191a;
+}
+
+.shopcar::after {
+    /* 右箭头图标编号 */
+    content: '\e920';
+    font-family: 'icomoon';
+    /* 图标距离左边10px */
+    margin-left: 10px;
+}
+
+/* 购买商品的数量图标 */
+.count {
+    /* 这里是子绝父绝，也可以 */
+    position: absolute;
+    top: -5px;
+    /* 这里为什么要用左对齐，因为如果数字很大，盒子就会往左边撑开，比较好看 */
+    left: 105px;
+    /* 这里不要给宽度，因为不知道是几位数，所以给个padding撑开就行 */
+    height: 14px;
+    /* 这里如果不写行高会继承父元素的行高 */
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    /* 四个值表示左上，右上，右下，左下的圆角弧度，做成只有左下是直角的效果 */
+    border-radius: 7px 7px 7px 0;
+}
+
+/* nav模块制作 */
+.nav {
+    height: 47px;
+    /* 很长的下边框 */
+    border-bottom: 2px solid #b1191a;
+}
+
+/* 下拉菜单 */
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+
+/* 设置下拉菜单的表头 */
+.dropdown .dt {
+    width: 210px;
+    height: 45px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+/* 这个在下拉菜单的下面 */
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.dropdown .dd ul li {
+    /* 子绝父相 */
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+}
+
+/* 鼠标经过li，背景变白色 */
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+}
+
+/* 添加右边的右箭头 */
+.dropdown .dd ul li::after {
+    /* 用绝对定位定在右边 */
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    color: #fff;
+    content: '\e920';
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 鼠标经过li，a里的文字变成红色 */
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+/* 这个在下拉菜单的右边 */
+.nav .navitems {
+    float: left;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    /* 转换为块级元素，以设置长宽 */
+    display: block;
+    /* 这里不设置宽，也是因为不知道具体有几个字，所以用padding撑开 */
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+/* 底部模块制作 */
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+/* 服务模块 */
+.mod_service {
+    height: 80px;
+    /* 服务模块下面有一条很长的横线 */
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    /* 将服务模块里的五个li浮动水平展示 */
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+/* 设置图标 */
+.mod_service ul li h5 {
+    /* 这里加浮动是为了让后面的文字环绕显示 */
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+    /* 图标距离右边的文字8px */
+    margin-right: 8px;
+}
+
+.service_txt h4 {
+    /* 设置图标右边标题字体大小 */
+    font-size: 14px;
+}
+
+.service_txt p {
+    /* 设置图标右边段落字体大小 */
+    font-size: 12px;
+}
+
+/* 帮助模块 */
+.mod_help {
+    height: 185px;
+    /* 帮助模块下面也有一条横线 */
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    /* 让五个自定义列表水平显示 */
+    float: left;
+    width: 200px;
+}
+
+/* 把dl最后一个选出来 */
+.mod_help dl:last-child {
+    width: 90px;
+    /* 这个dl里面有上下的文字和二维码，在这里居中，三个子元素都会居中 */
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}
